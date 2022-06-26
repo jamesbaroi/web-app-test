@@ -1,0 +1,19 @@
+{
+  "name": "web-app-test",
+  "version": "1.0.0",
+  "description": "A web app for testing.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesbaroi/web-app-test.git"
+  },
+  "author": "James A. Baroi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesbaroi/web-app-test/issues"
+  },
+  "homepage": "https://github.com/jamesbaroi/web-app-test#readme"
+}
