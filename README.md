@@ -4,7 +4,9 @@ A node-express-mysql app for testing purposes.
 
 ## Requirements:
 I. Configure mysql database
+
 II. Configure runtime variables
+
 III. Configure server application
 
 ## I. Configure mysql database
