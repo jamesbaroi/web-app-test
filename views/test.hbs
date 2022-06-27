@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>web-app-test</title>
+  </head>
+  <body>
+    <header>
+      <h1>web-app-test</h1>
+      <h2>test</h2>
+    </header>
+    <main>
+      <p>Success.</p>
+      <button>
+        <a href="http://{{host}}:{{port}}/">Return</a>
+      </button>
+      <h3>The Chemical Elements</h3>
+      <table>
+        <tr>
+          <th>Number</th>
+          <th>Symbol</th>
+          <th>Element</th>
+          <th>Weight</th>
+        </tr>
+        {{#if results}}
+        {{#each results}}
+        <tr>
+          <td>{{id}}</td>
+          <td>{{symbol}}</td>
+          <td>{{element}}</td>
+          <td>{{weight_commerce}}</td>
+        </tr>
+        {{/each}}
+        {{/if}}
+      </table>
+    </main>
+  </body>
+</html>
