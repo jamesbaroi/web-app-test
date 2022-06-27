@@ -1,7 +1,7 @@
 # web-app-test
 A web app for testing.
 
-Testing node-express-mysql app for instance configuration.
+A node-express-mysql app for testing purposes.
 
 Requirements:
 
@@ -14,7 +14,7 @@ and:
 
 OR
 
-(2) Change the name to your choosing in chemical_elements.sql 
+(2) Change the name to your choosing in schemas > chemical_elements.sql 
 
 Source the chemicel_elements schema to the created database.
 
