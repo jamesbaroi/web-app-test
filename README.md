@@ -26,6 +26,8 @@ HOST='your-server-host'
 
 PORT='your-server-port'
 
+NODE_ENV='development-or-production'
+
 MYSQL_DATABASE_HOST='your-mysql-server-host'
 
 MYSQL_DATABASE_USER='your-mysql-server-user'
