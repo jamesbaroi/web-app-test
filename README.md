@@ -1,5 +1,4 @@
-# web-app-test
-A web app for testing.
+# Web-App-Test
 A node-express-mysql app for testing purposes.
 
 ## Requirements:
