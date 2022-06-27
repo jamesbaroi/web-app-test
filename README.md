@@ -19,6 +19,7 @@ Source the chemicel_elements schema to the created database.
 
 ## II. Configure runtime variables
 Enter node runtime environment variables as follows:
+
 (1) HOST='your-server-host'
 
 (2) PORT='your-server-port'
