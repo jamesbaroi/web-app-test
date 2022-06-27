@@ -1,6 +1,7 @@
 import express from 'express';
-import morgan from 'morgan';
+import hbs from 'express-handlebars';
 import mysql from 'mysql';
+import morgan from 'morgan';
 
 // Config
 import dotenv from 'dotenv';
@@ -32,7 +33,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // View
-app.set('view engine', 'hbs');
+app.engine('.hbs', hbs.engine({ defaultLayout: 'main', extname: '.hbs' }));
+app.set('view engine', '.hbs');
+app.set('views', './views');
 
 // Route index
 app.get('/', (req, res) => {
@@ -50,6 +53,9 @@ app.get('/test', (req, res) => {
     });
   });
 });
+
+// Redirect
+app.all('*', (req, res) => { res.redirect('/'); });
 
 // Serve
 app.listen(port || 8080, () => {
