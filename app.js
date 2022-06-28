@@ -25,14 +25,14 @@ const db = mysql.createPool({
 // Create app
 const app = express();
 
-// Log
+// Log status in dev
 if (nodenv === 'development') { app.use(morgan('dev')); }
 
-// Parse
+// Parse url / json
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// View
+// Set template engine
 app.engine('.hbs', hbs.engine({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', '.hbs');
 app.set('views', './views'); // use full path to views in production
@@ -57,7 +57,7 @@ app.get('/test', (req, res) => {
 // Redirect
 app.all('*', (req, res) => { res.redirect('/'); });
 
-// Serve
+// Serve app
 app.listen(port || 8080, () => {
   console.log(`Server running in ${nodenv} at http://${host}:${port}`);
 });
