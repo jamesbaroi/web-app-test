@@ -41,6 +41,6 @@ the host server's root folder. For example on aws-ec2-linux-2:
 
 app.set('views', '/home/ec2-user/web-app-test/views');
 
-The the full path is not strictly needed to run the application on a server but
+The full path is not strictly needed to run the application on a server but
 useful - in one use case, for automating application restart on system reboot
 using systemd services.
