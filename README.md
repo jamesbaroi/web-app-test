@@ -12,9 +12,9 @@ II. Set runtime variables
 password.
 
 (2) Name the created database 'chemistry' or change the name to your choosing
-in schemas > chemical_elements.sql.
+in sql > chemical_elements.sql.
 
-(3) Source the chemicel_elements schema to the created database.
+(3) Source chemicel_elements.sql to the created database.
 
 ### II. Set runtime variables
 Enter node runtime environment variables as follows:
