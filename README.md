@@ -12,9 +12,11 @@ III. Configure server application
 Create a mysql database and note the server host name, user name, password,
 and:
 
-(1) Name the database 'chemistry' OR
+(1) Name the database 'chemistry'
 
-(2) Change the name to your choosing in schemas > chemical_elements.sql 
+OR
+
+(2) Change the name to your choosing in schemas > chemical_elements.sql
 
 Source the chemicel_elements schema to the created database.
 
