@@ -1,3 +1,7 @@
+# Web-App-Test
+A node-express-mysql application for testing purposes. The app renders a
+landing page and a link to a table of the chemical elements. 
+
 ## Requirements:
 I. Configure mysql database
 
