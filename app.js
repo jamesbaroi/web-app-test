@@ -35,7 +35,7 @@ app.use(express.json());
 // View
 app.engine('.hbs', hbs.engine({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', '.hbs');
-app.set('views', './views');
+app.set('views', './views'); // use full path to views in production
 
 // Route index
 app.get('/', (req, res) => {

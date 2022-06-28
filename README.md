@@ -7,8 +7,6 @@ I. Configure mysql database
 
 II. Set runtime variables
 
-III. Configure server application
-
 ### I. Configure mysql database
 (1) Create a mysql database and note the server host name, user name, and
 password.
@@ -34,13 +32,3 @@ Enter node runtime environment variables as follows:
 (6) MYSQL_DATABASE_PASS='your-mysql-server-password'
 
 (7) MYSQL_DATABASE_NAME='your-mysql-server-database'
-
-### III. Configure server application
-Change the template engine's view path in app.js to its full path relative to
-the host server's root folder. For example on aws-ec2-linux-2:
-
-app.set('views', '/home/ec2-user/web-app-test/views');
-
-The full path is not strictly needed to run the application on a server but
-useful - in one use case, for automating application restart on system reboot
-using systemd services.
