@@ -2,9 +2,9 @@ import express from 'express';
 import hbs from 'express-handlebars';
 import mysql from 'mysql';
 import morgan from 'morgan';
+import dotenv from 'dotenv';
 
 // Config
-import dotenv from 'dotenv';
 dotenv.config();
 const nodenv = process.env.NODE_ENV;
 const host = process.env.HOST;
