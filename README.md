@@ -4,11 +4,11 @@ A node-express-mysql app for testing purposes.
 ## Requirements:
 I. Configure mysql database
 
-II. Configure runtime variables
+II. Set runtime variables
 
 III. Configure server application
 
-## I. Configure mysql database
+### I. Configure mysql database
 Create a mysql database and note the server host name, user name, password,
 and:
 
@@ -18,7 +18,7 @@ and:
 
 Source the chemicel_elements schema to the created database.
 
-## II. Configure runtime variables
+### II. Set runtime variables
 Enter node runtime environment variables as follows:
 
 (1) HOST='your-server-host'
@@ -35,12 +35,12 @@ Enter node runtime environment variables as follows:
 
 (7) MYSQL_DATABASE_NAME='your-mysql-server-database'
 
-## III. Configure server application
+### III. Configure server application
 Change the template engine's view path to its full path relative to the host
 server's root folder. For example on aws-ec2-linux-2:
 
 app.set('views', '/home/ec2-user/web-app-test/views');
 
-The inclusiong of the views full path is not strictly needed to run the
-application on a server but useful - in one use case, for automating
-application restart on system reboot using systemd services.
+The the full path is not strictly needed to run the application on a server but
+useful - in one use case, for automating application restart on system reboot
+using systemd services.
