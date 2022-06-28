@@ -1,5 +1,6 @@
 # Web-App-Test
-A node-express-mysql app for testing purposes.
+A node-express-mysql application for testing purposes. The app renders a
+landing page and a link to a table of the chemical elements. 
 
 ## Requirements:
 I. Configure mysql database
@@ -9,16 +10,13 @@ II. Set runtime variables
 III. Configure server application
 
 ### I. Configure mysql database
-Create a mysql database and note the server host name, user name, password,
-and:
+(1) Create a mysql database and note the server host name, user name, and
+password.
 
-(1) Name the database 'chemistry'
+(2) Name the created database 'chemistry' or change the name to your choosing
+in schemas > chemical_elements.sql.
 
-OR
-
-(2) Change the name to your choosing in schemas > chemical_elements.sql
-
-Source the chemicel_elements schema to the created database.
+(3) Source the chemicel_elements schema to the created database.
 
 ### II. Set runtime variables
 Enter node runtime environment variables as follows:
@@ -38,8 +36,8 @@ Enter node runtime environment variables as follows:
 (7) MYSQL_DATABASE_NAME='your-mysql-server-database'
 
 ### III. Configure server application
-Change the template engine's view path to its full path relative to the host
-server's root folder. For example on aws-ec2-linux-2:
+Change the template engine's view path in app.js to its full path relative to
+the host server's root folder. For example on aws-ec2-linux-2:
 
 app.set('views', '/home/ec2-user/web-app-test/views');
 
