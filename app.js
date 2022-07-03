@@ -28,10 +28,6 @@ const app = express();
 // Log status in dev
 if (nodenv === 'development') { app.use(morgan('dev')); }
 
-// Parse url / json
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
 // Set template engine
 app.engine('.hbs', hbs.engine({ defaultLayout: 'main', extname: '.hbs' }));
 app.set('view engine', '.hbs');
